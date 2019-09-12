@@ -1,1 +1,228 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  font-size: 62.5%;
+}
+.preload {
+  width: 880px;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding: 2%;
+}
+.container a {
+  margin-right: 20px;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+.johnny {
+  width: 40%;
+  margin-top: 5%;
+}
+.home {
+  padding: 3%;
+  font-size: 2rem;
+  background-color: #e9ecef;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 5px;
+}
+.home h1 {
+  font-size: 6rem;
+}
+.home .jam {
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+.home .subhome {
+  border-top: 1px solid #d1d4d7;
+  padding-top: 2%;
+}
+.home .btn {
+  font-size: 2rem;
+  padding: 1%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background: grey;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+}
+.middle {
+  display: flex;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 3%;
+}
+.middle .listen,
+.middle .stuff {
+  width: 50%;
+}
+.middle .stuff {
+  margin-left: 2.5%;
+}
+.middle .listen {
+  margin-right: 2.5%;
+}
+.middle .listen h2,
+.middle h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+  margin-top: 6%;
+}
+.middle .listen p {
+  line-height: 140%;
+}
+.bottom {
+  font-family: 'Roboto', sans-serif;
+}
+strong {
+  font-weight: bold;
+}
+.work {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+.tbl {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+tr .th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 3%;
+  background-color: white;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 2%;
+}
+.tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 3%;
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+  background-color: gray;
+  color: white;
+}
+.footer p {
+  display: flex;
+  flex-direction: center;
+}
