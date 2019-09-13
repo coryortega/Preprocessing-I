@@ -25,142 +25,338 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+@link-color: #dddddd;
+@font-stack:'Roboto', sans-serif;
+
 html {
   font-size: 62.5%
 }
+// .preload {
+//   width: 45%;
+// }
+
+// @media only screen and (max-width: 500px) {
+//   .preload {
+//     margin: 0%;
+//     padding: 0%;
+//     width: 100%
+//   }
+// }
+
 .preload {
-  width: 880px;
+  width: 45%;
   margin: 0 auto;
-}
-header nav {
+
+  // @media only screen and (max-width: 500px) {
+  //   .preload {
+  //     margin: 0%;
+  //     padding: 0%;
+  //     width: 100%
+  //   }
+  // }
+.flexcenter {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
 }
-.container {
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-  padding: 2%;
-}
-.container a {
-  margin-right: 20px;
-  font-size: 2rem;
-  color: black;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+.justifycontent {
+  justify-content: center;
 }
 
-.johnny {
-  width: 40%;
-  margin-top: 5%;
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    }
+    
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      padding: 2%;
+      
+    }
+
+    .container a {
+      margin-right: 20px;
+      font-size: 2rem;
+      color: black;
+      text-decoration: none;
+      font-family: @font-stack;
+    }
   
-}
-.home{
-  padding: 3%;
-  font-size: 2rem;
-  background-color: #e9ecef;
-  font-family: 'Roboto', sans-serif;
-  border-radius: 5px;
-    h1 {
-    font-size: 6rem;
-    }
-  .jam {
-     margin-bottom: 3%;
-     margin-top: 2%;
-    }
-  .subhome {
-    border-top: 1px solid #d1d4d7;
-    padding-top: 2%;
-    }
-  .btn {
+  .home{
+    padding: 3%;
     font-size: 2rem;
-    padding: 1%;
-    margin-top: 2%;
-    margin-bottom: 4%;
-    background: grey;
-    border: 0;
+    background-color: #e9ecef;
+    font-family: @font-stack;
     border-radius: 5px;
+
+    .contact {
+      .flexcenter();
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 4%;
+      input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+        
+      }
+      input[type=submit] {
+        background-color: grey;
+        color: white;
+        padding: 2% 10%;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    }
+
+    .johnny {
+      width: 40%;
+      // margin-top: 5%;
+      margin-right: 2%;
+      
+    }
+
+    h1 {
+      font-size: 6rem;
+    }
+
+    .jam {
+       margin-bottom: 3%;
+       margin-top: 2%;
+    }
+
+    .subhome {
+      border-top: 1px solid #d1d4d7;
+      padding-top: 2%;
+    }
+
+    .btn {
+      font-size: 2rem;
+      padding: 1%;
+      margin-top: 2%;
+      margin-bottom: 4%;
+      background: grey;
+      border: 0;
+      border-radius: 5px;
+      color: white;
+    }
+  } /*--home end--*/
+  
+  .middle {
+    display: flex;
+    font-size: 2rem;
+    font-family: @font-stack;
+    margin-bottom: 3%;
+
+      .listen, .stuff {
+        width: 50%;
+      }
+      .stuff {
+        margin-left: 2.5%;
+
+        .tbl {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          font-size: 2rem;
+          font-family: @font-stack;
+          width: 100%;
+        }
+
+        tr .th {
+          border: 1px solid @link-color;
+          text-align: left;
+          padding: 3%;
+          background-color: white;
+        }
+    }
+    .listen {
+      margin-right: 2.5%
+    }
+
+   .listen h2, h3 {
+     font-size: 3rem;
+     font-weight: bold;
+     margin-bottom: 2%;
+     margin-top: 6%;
+    }
+
+    .listen p {
+      line-height: 140%
+    }
+  }
+
+  .bottom {
+    font-family: @font-stack;
+
+    .work {
+      font-weight: bold;
+      font-size: 3rem;
+      margin-bottom: 2%;
+
+        strong {
+          font-weight: bold;
+        }
+    }
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 2rem;
+      font-family: @font-stack;
+    }
+    
+    td, th {
+      border: 1px solid @link-color;
+      text-align: left;
+      padding: 2%;
+    }
+    
+    .tr:nth-child(even) {
+      background-color: @link-color;
+    }
+  }
+  .footer {
+    display: flex;
+    .justifycontent();
+    font-size: 2rem;
+    padding: 3%;
+    margin-top: 5%;
+    font-family: @font-stack;
+    background-color: gray;
     color: white;
   }
-}
 
-.middle {
-  display: flex;
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-  margin-bottom: 3%;
-  .listen, .stuff {
-    width: 50%;
+  .footer p{
+    display: flex;
+    flex-direction: center;
   }
   
-  .stuff {
-    margin-left: 2.5%
-  }
-  .listen {
-    margin-right: 2.5%
-  }
- .listen h2, h3 {
-   font-size: 3rem;
-   font-weight: bold;
-   margin-bottom: 2%;
-   margin-top: 6%;
-  }
-  .listen p {
-    line-height: 140%
-  }
-}
-.bottom {
-  font-family: 'Roboto', sans-serif;
-}
-strong {
-  font-weight: bold;
-}
-.work {
-  font-weight: bold;
-  font-size: 3rem;
-  margin-bottom: 2%;
-}
-.tbl {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-}
-tr .th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 3%;
-  background-color: white;
-}
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-}
+} /*!--preload end--*/
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 2%;
-}
+/*--media query--*/
+@media only screen and (max-width: 500px) {
+  .preload {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
 
-.tr:nth-child(even) {
-  background-color: #dddddd;
-}
-.footer {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  padding: 3%;
-  margin-top: 5%;
-  font-family: 'Roboto', sans-serif;
-  background-color: gray;
-  color: white;
-}
-.footer p{
-  display: flex;
-  flex-direction: center;
+     header .nav1 .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .home .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        // flex-wrap: nowrap;
+        // align-items: center;
+
+        h1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+        }
+        
+        img {
+          width: 90%;
+          border-radius: 10px;
+          margin-bottom: 3%;
+        }
+      }
+      .middle {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        font-family: @font-stack;
+        margin-bottom: 3%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+      
+          .listen, .stuff {
+            width: 100%;
+          }
+          .stuff {
+            margin-right: 5%;
+            margin-left: 5%;
+
+            h3 {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              margin-top: 2%;
+            }
+            // h2 {
+            //   display: flex;
+            //   justify-content: center;
+            //   width: 100%;
+            //   margin: 0;
+            //   padding: 0;
+            //   margin-top: 2%;
+            // }
+    
+            .tbl {
+              font-family: arial, sans-serif;
+              border-collapse: collapse;
+              font-size: 2rem;
+              font-family: @font-stack;
+              width: 100%;
+            }
+    
+            tr .th {
+              border: 1px solid @link-color;
+              text-align: left;
+              padding: 3%;
+              background-color: white;
+            }
+        }
+      
+        .listen {
+          margin-right: 5%;
+          margin-left: 5%;
+          width: 95%;
+        }
+    
+       .listen h2, h3 {
+         font-size: 3rem;
+         font-weight: bold;
+         margin-bottom: 2%;
+         margin-top: 6%;
+        }
+    
+        .listen p {
+          line-height: 140%
+        }
+        h2 {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          margin-top: 0;
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+      }
+  }
+ 
 }

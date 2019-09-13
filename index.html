@@ -20,22 +20,45 @@
     </header>
     <!--nav end-->
     <!--home-->
-    <section class=home>
+    <section id=home class=home>
       <section>
-        <img class=johnny src=https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80>
+          <div id=contact class="contact">
+              <form action="action_page.php">
+            
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+              <img class=johnny src=luis-villasmil-hh3ViD0r0Rc-unsplash.jpg>
+            </div>
 				<h1>Johnny Appleseed - Web Dev</h1>
         <div class=jam>
         <p>Technology is my jam!</p>
         </div>
       <div class=subhome>
         <p>occasionally, I have time to work on side projects, if you're interested, let me know by signing              up on this website</p>
-        <button class="btn">Lets Team Up</button>
+        <!-- <button class="btn">Lets Team Up</button> -->
       </div>
 			</section>
     </section>
   <!--home end-->
   <!--middle content-->
-    <section class=middle>
+    <section id=about class=middle>
       <div class=listen>
         <header>
           <h2>Listen Up...</h2>
@@ -65,7 +88,8 @@
     </section>
  <!--middle content end-->
  <!--bottom content-->
-    <section class=bottom>
+
+    <section id=portfolio class=bottom>
       <h3 class=work> Work History</h3>
         <table>
         <tr class=tr>

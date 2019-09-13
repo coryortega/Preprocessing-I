@@ -94,50 +94,91 @@ html {
   font-size: 62.5%;
 }
 .preload {
-  width: 880px;
+  width: 45%;
   margin: 0 auto;
+  /*--home end--*/
 }
-header nav {
+.preload .flexcenter {
+  display: flex;
+}
+.preload .justifycontent {
+  justify-content: center;
+}
+.preload header nav {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-.container {
+.preload .container {
   display: flex;
   justify-content: space-between;
-  width: 30%;
+  width: 50%;
   padding: 2%;
 }
-.container a {
+.preload .container a {
   margin-right: 20px;
   font-size: 2rem;
   color: black;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
 }
-.johnny {
-  width: 40%;
-  margin-top: 5%;
-}
-.home {
+.preload .home {
   padding: 3%;
   font-size: 2rem;
   background-color: #e9ecef;
   font-family: 'Roboto', sans-serif;
   border-radius: 5px;
 }
-.home h1 {
+.preload .home .contact {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4%;
+}
+.preload .home .contact input[type=text],
+.preload .home .contact select,
+.preload .home .contact textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */;
+}
+.preload .home .contact input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 2% 10%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.preload .home .johnny {
+  width: 40%;
+  margin-right: 2%;
+}
+.preload .home h1 {
   font-size: 6rem;
 }
-.home .jam {
+.preload .home .jam {
   margin-bottom: 3%;
   margin-top: 2%;
 }
-.home .subhome {
+.preload .home .subhome {
   border-top: 1px solid #d1d4d7;
   padding-top: 2%;
 }
-.home .btn {
+.preload .home .btn {
   font-size: 2rem;
   padding: 1%;
   margin-top: 2%;
@@ -147,72 +188,73 @@ header nav {
   border-radius: 5px;
   color: white;
 }
-.middle {
+.preload .middle {
   display: flex;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 3%;
 }
-.middle .listen,
-.middle .stuff {
+.preload .middle .listen,
+.preload .middle .stuff {
   width: 50%;
 }
-.middle .stuff {
+.preload .middle .stuff {
   margin-left: 2.5%;
 }
-.middle .listen {
-  margin-right: 2.5%;
-}
-.middle .listen h2,
-.middle h3 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 2%;
-  margin-top: 6%;
-}
-.middle .listen p {
-  line-height: 140%;
-}
-.bottom {
-  font-family: 'Roboto', sans-serif;
-}
-strong {
-  font-weight: bold;
-}
-.work {
-  font-weight: bold;
-  font-size: 3rem;
-  margin-bottom: 2%;
-}
-.tbl {
+.preload .middle .stuff .tbl {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
-tr .th {
+.preload .middle .stuff tr .th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 3%;
   background-color: white;
 }
-table {
+.preload .middle .listen {
+  margin-right: 2.5%;
+}
+.preload .middle .listen h2,
+.preload .middle h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+  margin-top: 6%;
+}
+.preload .middle .listen p {
+  line-height: 140%;
+}
+.preload .bottom {
+  font-family: 'Roboto', sans-serif;
+}
+.preload .bottom .work {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+.preload .bottom .work strong {
+  font-weight: bold;
+}
+.preload .bottom table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   font-size: 2rem;
   font-family: 'Roboto', sans-serif;
 }
-td,
-th {
+.preload .bottom td,
+.preload .bottom th {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 2%;
 }
-.tr:nth-child(even) {
+.preload .bottom .tr:nth-child(even) {
   background-color: #dddddd;
 }
-.footer {
+.preload .footer {
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -222,7 +264,107 @@ th {
   background-color: gray;
   color: white;
 }
-.footer p {
+.preload .footer p {
   display: flex;
   flex-direction: center;
+}
+/*!--preload end--*/
+/*--media query--*/
+@media only screen and (max-width: 500px) {
+  .preload {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+  }
+  .preload header .nav1 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .preload .home .contact {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .preload .home .contact h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .preload .home .contact img {
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+  }
+  .preload .middle {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .preload .middle .listen,
+  .preload .middle .stuff {
+    width: 100%;
+  }
+  .preload .middle .stuff {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .preload .middle .stuff h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 2%;
+  }
+  .preload .middle .stuff .tbl {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+  }
+  .preload .middle .stuff tr .th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3%;
+    background-color: white;
+  }
+  .preload .middle .listen {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 95%;
+  }
+  .preload .middle .listen h2,
+  .preload .middle h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2%;
+    margin-top: 6%;
+  }
+  .preload .middle .listen p {
+    line-height: 140%;
+  }
+  .preload .middle h2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+  }
+  .preload .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
 }
